@@ -1,0 +1,27 @@
+{
+  "version": "2.6.2",
+  "summary": {
+    "title": "Saew-MAtricula",
+    "owner": "Alejandro Minda",
+    "description": "Modelado del SAEW con owasp",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Saew diagrama",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "Diagrama de análisis de datos con STRIDE"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Alejandro, Gianfranco, Jefferson, Jeremy",
+    "threatTop": 0
+  }
+}
