@@ -1085,60 +1085,8 @@
             },
             "vertices": [
               {
-                "x": 640,
+                "x": 730,
                 "y": 90
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Datos de materias",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Datos de materias"
-            ],
-            "id": "3facef66-0713-4a3c-b168-6982c80fb82f",
-            "source": {
-              "cell": "9f9ae8cb-d768-487c-9376-41fa4ed36508",
-              "port": "458293d6-52c0-4324-94c0-984548e6d285"
-            },
-            "target": {
-              "cell": "e850844f-15f0-4160-af9a-8d112e9a1d94",
-              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
-            },
-            "vertices": [
-              {
-                "x": 700,
-                "y": 290
               }
             ]
           },
@@ -1249,8 +1197,12 @@
             },
             "vertices": [
               {
-                "x": 340,
-                "y": 180
+                "x": 370,
+                "y": 160
+              },
+              {
+                "x": 330,
+                "y": 160
               }
             ]
           },
@@ -1303,58 +1255,6 @@
               {
                 "x": 330,
                 "y": 230
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Verificar materias y disponibilida",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Verificar materias y disponibilida"
-            ],
-            "id": "4a62e70a-fc92-42ec-9c35-383f0674038d",
-            "source": {
-              "cell": "e850844f-15f0-4160-af9a-8d112e9a1d94",
-              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
-            },
-            "target": {
-              "cell": "9f9ae8cb-d768-487c-9376-41fa4ed36508",
-              "port": "458293d6-52c0-4324-94c0-984548e6d285"
-            },
-            "vertices": [
-              {
-                "x": 670,
-                "y": 225
               }
             ]
           },
@@ -1889,6 +1789,114 @@
               {
                 "x": 310,
                 "y": 670
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Verificar materias y disponibilida",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Verificar materias y disponibilida"
+            ],
+            "id": "4a62e70a-fc92-42ec-9c35-383f0674038d",
+            "source": {
+              "cell": "e850844f-15f0-4160-af9a-8d112e9a1d94",
+              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
+            },
+            "target": {
+              "cell": "9f9ae8cb-d768-487c-9376-41fa4ed36508",
+              "port": "458293d6-52c0-4324-94c0-984548e6d285"
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 225
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Datos de materias",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Datos de materias"
+            ],
+            "id": "3facef66-0713-4a3c-b168-6982c80fb82f",
+            "source": {
+              "cell": "9f9ae8cb-d768-487c-9376-41fa4ed36508",
+              "port": "458293d6-52c0-4324-94c0-984548e6d285"
+            },
+            "target": {
+              "cell": "e850844f-15f0-4160-af9a-8d112e9a1d94",
+              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
+            },
+            "vertices": [
+              {
+                "x": 800,
+                "y": 225
+              },
+              {
+                "x": 700,
+                "y": 290
               }
             ]
           },
