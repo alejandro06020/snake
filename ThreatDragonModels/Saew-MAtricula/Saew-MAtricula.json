@@ -492,13 +492,6 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1912,52 +1905,6 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Confirmacion/Error",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Confirmacion/Error"
-            ],
-            "id": "de707de7-d66f-4a05-9b9c-b46d12b9433e",
-            "source": {
-              "x": 97,
-              "y": 431
-            },
-            "target": {
-              "x": 197,
-              "y": 531
-            }
-          },
-          {
             "position": {
               "x": 990,
               "y": 620
@@ -2197,6 +2144,58 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 13,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Confirmacion/Error",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Confirmacion/Error"
+            ],
+            "id": "de707de7-d66f-4a05-9b9c-b46d12b9433e",
+            "source": {
+              "x": 510,
+              "y": 400
+            },
+            "target": {
+              "cell": "f06472c0-09af-4b94-a8d5-6884fc1f3780",
+              "port": "9068fa97-7fc7-4cd9-907c-7029b8048e68"
+            },
+            "vertices": [
+              {
+                "x": 160,
+                "y": 480
+              }
+            ]
           }
         ],
         "description": "Diagrama de análisis de datos con STRIDE"
