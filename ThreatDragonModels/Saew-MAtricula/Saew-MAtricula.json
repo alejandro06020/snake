@@ -1439,82 +1439,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Solicitud de materias",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "80003fad-5ba8-4805-aa26-77745dfcff32",
-                  "title": "Manipulación de solicitud de matrícula",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Un atacante podría modificar parámetros de matrícula para registrar materias no autorizadas.",
-                  "mitigation": "Validar solicitudes en backend y aplicar controles de autorización.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 9,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Solicitud de materias"
-            ],
-            "id": "a548f91f-98d4-4f79-8d5d-e60b0845187d",
-            "source": {
-              "cell": "f06472c0-09af-4b94-a8d5-6884fc1f3780",
-              "port": "488f8e6b-ac40-42c0-9ee0-cdd8337e9414"
-            },
-            "target": {
-              "cell": "e850844f-15f0-4160-af9a-8d112e9a1d94",
-              "port": "93063391-49bb-4c39-a2dd-57f523b70596"
-            },
-            "vertices": [
-              {
-                "x": 340,
-                "y": 230
-              },
-              {
-                "x": 390,
-                "y": 230
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Confirmación/Error",
               "description": "",
               "outOfScope": false,
@@ -2153,6 +2077,95 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Solicitud de materias",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "80003fad-5ba8-4805-aa26-77745dfcff32",
+                  "title": "Manipulación de solicitud de matrícula",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Un atacante podría modificar parámetros de matrícula para registrar materias no autorizadas.",
+                  "mitigation": "Validar solicitudes en backend y aplicar controles de autorización.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "6d760ec2-8fc5-46c8-a5ea-a4ea2adb6b54",
+                  "title": "Saturación del sistema de matrícula",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Solicitudes masivas podrían afectar la disponibilidad del sistema durante periodos de alta demanda.",
+                  "mitigation": "Implementar rate limiting, balanceo de carga y monitoreo continuo.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Solicitud de materias"
+            ],
+            "id": "a548f91f-98d4-4f79-8d5d-e60b0845187d",
+            "source": {
+              "cell": "f06472c0-09af-4b94-a8d5-6884fc1f3780",
+              "port": "488f8e6b-ac40-42c0-9ee0-cdd8337e9414"
+            },
+            "target": {
+              "cell": "e850844f-15f0-4160-af9a-8d112e9a1d94",
+              "port": "93063391-49bb-4c39-a2dd-57f523b70596"
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 230
+              },
+              {
+                "x": 410,
+                "y": 230
+              }
+            ]
+          },
+          {
             "position": {
               "x": 1040,
               "y": 640
@@ -2547,6 +2560,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Alejandro, Gianfranco, Jefferson, Jeremy",
-    "threatTop": 21
+    "threatTop": 22
   }
 }
