@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 480,
-              "y": 90
+              "x": 530,
+              "y": 110
             },
             "size": {
               "width": 60,
@@ -139,8 +139,8 @@
           },
           {
             "position": {
-              "x": 101,
-              "y": 90
+              "x": 151,
+              "y": 110
             },
             "size": {
               "width": 112.5,
@@ -256,8 +256,8 @@
           },
           {
             "position": {
-              "x": 490,
-              "y": 230
+              "x": 540,
+              "y": 250
             },
             "size": {
               "width": 60,
@@ -376,8 +376,8 @@
           },
           {
             "position": {
-              "x": 510,
-              "y": 371
+              "x": 560,
+              "y": 391
             },
             "size": {
               "width": 60,
@@ -496,8 +496,8 @@
           },
           {
             "position": {
-              "x": 520,
-              "y": 600
+              "x": 570,
+              "y": 620
             },
             "size": {
               "width": 60,
@@ -616,8 +616,8 @@
           },
           {
             "position": {
-              "x": 826,
-              "y": 90
+              "x": 876,
+              "y": 110
             },
             "size": {
               "width": 120,
@@ -740,8 +740,8 @@
           },
           {
             "position": {
-              "x": 826,
-              "y": 195
+              "x": 876,
+              "y": 215
             },
             "size": {
               "width": 120,
@@ -864,8 +864,8 @@
           },
           {
             "position": {
-              "x": 990,
-              "y": 340
+              "x": 1040,
+              "y": 410
             },
             "size": {
               "width": 120,
@@ -990,7 +990,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1011,13 +1012,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "78efc132-24e9-413f-985c-02b12369b80a",
+                  "title": "Exposición de credenciales de usuario",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Las credenciales podrían ser interceptadas o expuestas durante el proceso de autenticación.",
+                  "mitigation": "Implementar HTTPS/TLS, autenticación multifactor y cifrado de contraseñas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Credenciales de usuario"
@@ -1033,8 +1053,8 @@
             },
             "vertices": [
               {
-                "x": 350,
-                "y": 80
+                "x": 400,
+                "y": 100
               }
             ]
           },
@@ -1042,279 +1062,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Validar usuario",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Validar usuario"
-            ],
-            "id": "d9eb33f7-c32f-429a-92f6-70a0829d3124",
-            "source": {
-              "cell": "645c3c79-8059-47a6-97cc-b0bd04b9f6a7",
-              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
-            },
-            "target": {
-              "cell": "a1a2d2de-7d33-4116-a862-bc966e091f56",
-              "port": "458293d6-52c0-4324-94c0-984548e6d285"
-            },
-            "vertices": [
-              {
-                "x": 730,
-                "y": 90
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Datos de usurio",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Datos de usurio"
-            ],
-            "id": "8da9640f-2bba-40cc-97aa-64953111f85f",
-            "source": {
-              "cell": "a1a2d2de-7d33-4116-a862-bc966e091f56",
-              "port": "458293d6-52c0-4324-94c0-984548e6d285"
-            },
-            "target": {
-              "cell": "645c3c79-8059-47a6-97cc-b0bd04b9f6a7",
-              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
-            },
-            "vertices": [
-              {
-                "x": 730,
-                "y": 170
-              },
-              {
-                "x": 620,
-                "y": 170
-              },
-              {
-                "x": 570,
-                "y": 150
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Estado de autenticacion",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Estado de autenticacion"
-            ],
-            "id": "7b5896ef-e35b-455a-ad4a-55ca5cac7dc5",
-            "source": {
-              "cell": "645c3c79-8059-47a6-97cc-b0bd04b9f6a7",
-              "port": "93063391-49bb-4c39-a2dd-57f523b70596"
-            },
-            "target": {
-              "cell": "f06472c0-09af-4b94-a8d5-6884fc1f3780",
-              "port": "6aa81627-5e35-4b9d-94fd-eeda23f6888f"
-            },
-            "vertices": [
-              {
-                "x": 370,
-                "y": 160
-              },
-              {
-                "x": 330,
-                "y": 160
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Solicitud de materias",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Solicitud de materias"
-            ],
-            "id": "a548f91f-98d4-4f79-8d5d-e60b0845187d",
-            "source": {
-              "cell": "f06472c0-09af-4b94-a8d5-6884fc1f3780",
-              "port": "488f8e6b-ac40-42c0-9ee0-cdd8337e9414"
-            },
-            "target": {
-              "cell": "e850844f-15f0-4160-af9a-8d112e9a1d94",
-              "port": "93063391-49bb-4c39-a2dd-57f523b70596"
-            },
-            "vertices": [
-              {
-                "x": 330,
-                "y": 230
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Guardar matricula",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Guardar matricula"
-            ],
-            "id": "3290f769-a6b8-4214-8bdd-25eacedaea9d",
-            "source": {
-              "cell": "9f9ae8cb-d768-487c-9376-41fa4ed36508",
-              "port": "34a064ee-14fe-476c-b43a-a606bb831b87"
-            },
-            "target": {
-              "cell": "ad58da16-c4ed-49b6-9637-73d5808c0009",
-              "port": "df37c3fb-1084-44fe-b1c6-2a901cde87cf"
-            },
-            "vertices": [
-              {
-                "x": 1050,
-                "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1335,339 +1084,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Confirmacion"
-            ],
-            "id": "3e21949b-d950-4bca-8741-d4b89a0ec72e",
-            "source": {
-              "cell": "ad58da16-c4ed-49b6-9637-73d5808c0009",
-              "port": "df37c3fb-1084-44fe-b1c6-2a901cde87cf"
-            },
-            "target": {
-              "cell": "9f9ae8cb-d768-487c-9376-41fa4ed36508",
-              "port": "9eb49012-d1f1-45d5-91bf-4cb82e37263e"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
+              "threats": [
+                {
+                  "id": "3f840319-014d-424b-a651-b36ce72f7922",
+                  "title": "Manipulación de confirmación administrativa",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Respuestas alteradas podrían generar inconsistencias administrativas.",
+                  "mitigation": "Validar integridad de respuestas y usar canales seguros.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 3,
+                "informationDisclosure": 0,
+                "denialOfService": 0
               }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Confirmación/Error",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Confirmación/Error"
-            ],
-            "id": "0f9de90f-b7a1-4feb-9f86-9ac6ee00d9f7",
-            "source": {
-              "cell": "e850844f-15f0-4160-af9a-8d112e9a1d94",
-              "port": "93063391-49bb-4c39-a2dd-57f523b70596"
-            },
-            "target": {
-              "cell": "f06472c0-09af-4b94-a8d5-6884fc1f3780",
-              "port": "488f8e6b-ac40-42c0-9ee0-cdd8337e9414"
-            },
-            "vertices": [
-              {
-                "x": 320,
-                "y": 290
-              },
-              {
-                "x": 230,
-                "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Verificar matricula",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Verificar matricula"
-            ],
-            "id": "73c7e11c-4918-4d1a-a283-44961d5b6e44",
-            "source": {
-              "cell": "2dcb74fa-98f2-4556-b88c-e99e0ae88291",
-              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
-            },
-            "target": {
-              "cell": "ad58da16-c4ed-49b6-9637-73d5808c0009",
-              "port": "458293d6-52c0-4324-94c0-984548e6d285"
-            },
-            "vertices": [
-              {
-                "x": 750,
-                "y": 330
-              },
-              {
-                "x": 770,
-                "y": 330
-              },
-              {
-                "x": 950,
-                "y": 370
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Datos de matricula",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Datos de matricula"
-            ],
-            "id": "8d76ee33-9498-44c6-a61b-756cde40390f",
-            "source": {
-              "cell": "ad58da16-c4ed-49b6-9637-73d5808c0009",
-              "port": "458293d6-52c0-4324-94c0-984548e6d285"
-            },
-            "target": {
-              "cell": "2dcb74fa-98f2-4556-b88c-e99e0ae88291",
-              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
-            },
-            "vertices": [
-              {
-                "x": 820,
-                "y": 480
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Solicitud materias a anular",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Solicitud materias a anular"
-            ],
-            "id": "7fb89af4-08cc-4241-8899-fbf76dec4d83",
-            "source": {
-              "x": 120,
-              "y": 150
-            },
-            "target": {
-              "cell": "2dcb74fa-98f2-4556-b88c-e99e0ae88291",
-              "port": "93063391-49bb-4c39-a2dd-57f523b70596"
-            },
-            "vertices": [
-              {
-                "x": 200,
-                "y": 360
-              },
-              {
-                "x": 430,
-                "y": 380
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Guardar/Actualizar periodos",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Guardar/Actualizar periodos"
-            ],
-            "id": "117783bb-eb3a-4fdb-a47a-6826e491e331",
-            "source": {
-              "cell": "6e1d5722-a830-4f43-9f37-64efc32b1353",
-              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
-            },
-            "target": {
-              "cell": "e3ef21c8-ffaa-41c9-a822-5ae9b9b67c98",
-              "port": "458293d6-52c0-4324-94c0-984548e6d285"
-            },
-            "vertices": [
-              {
-                "x": 690,
-                "y": 660
-              },
-              {
-                "x": 800,
-                "y": 610
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Confirmacion",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
             },
             "labels": [
               "Confirmacion"
@@ -1683,60 +1125,12 @@
             },
             "vertices": [
               {
-                "x": 790,
-                "y": 770
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Configuracion de periodos y fechas",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Configuracion de periodos y fechas"
-            ],
-            "id": "5041c4e6-413f-42fd-9cb9-3767a030891a",
-            "source": {
-              "cell": "62973589-d03b-4aa0-924a-b7a413469462",
-              "port": "6aa81627-5e35-4b9d-94fd-eeda23f6888f"
-            },
-            "target": {
-              "cell": "6e1d5722-a830-4f43-9f37-64efc32b1353",
-              "port": "93063391-49bb-4c39-a2dd-57f523b70596"
-            },
-            "vertices": [
+                "x": 910,
+                "y": 730
+              },
               {
-                "x": 340,
-                "y": 560
+                "x": 820,
+                "y": 730
               }
             ]
           },
@@ -1787,8 +1181,8 @@
             },
             "vertices": [
               {
-                "x": 310,
-                "y": 670
+                "x": 360,
+                "y": 690
               }
             ]
           },
@@ -1796,7 +1190,392 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Estado de autenticacion",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "48af2bb7-01cf-494b-8263-845d01326c5a",
+                  "title": "Exposición de tokens de sesión",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Los tokens o sesiones podrían ser capturados y reutilizados por atacantes.",
+                  "mitigation": "Usar cookies seguras HttpOnly y expiración de sesión.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Estado de autenticacion"
+            ],
+            "id": "7b5896ef-e35b-455a-ad4a-55ca5cac7dc5",
+            "source": {
+              "cell": "645c3c79-8059-47a6-97cc-b0bd04b9f6a7",
+              "port": "93063391-49bb-4c39-a2dd-57f523b70596"
+            },
+            "target": {
+              "cell": "f06472c0-09af-4b94-a8d5-6884fc1f3780",
+              "port": "6aa81627-5e35-4b9d-94fd-eeda23f6888f"
+            },
+            "vertices": [
+              {
+                "x": 460,
+                "y": 180
+              },
+              {
+                "x": 380,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Validar usuario",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "6539701e-7166-4bb4-92b1-c66625b58d40",
+                  "title": "Inyección SQL en validación de usuarios",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Consultas SQL inseguras podrían permitir manipulación de credenciales o acceso no autorizado a información de usuarios.",
+                  "mitigation": "Usar consultas parametrizadas, prepared statements y validación de entradas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Validar usuario"
+            ],
+            "id": "d9eb33f7-c32f-429a-92f6-70a0829d3124",
+            "source": {
+              "cell": "645c3c79-8059-47a6-97cc-b0bd04b9f6a7",
+              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
+            },
+            "target": {
+              "cell": "a1a2d2de-7d33-4116-a862-bc966e091f56",
+              "port": "458293d6-52c0-4324-94c0-984548e6d285"
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": 110
+              },
+              {
+                "x": 780,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Datos de usurio",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "e11a422b-8c73-48c7-8856-0783374e4190",
+                  "title": "Exposición de información sensible",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Información sensible de usuarios podría ser expuesta durante el proceso de autenticación.",
+                  "mitigation": "Cifrar conexiones a base de datos y limitar información retornada.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Datos de usurio"
+            ],
+            "id": "8da9640f-2bba-40cc-97aa-64953111f85f",
+            "source": {
+              "cell": "a1a2d2de-7d33-4116-a862-bc966e091f56",
+              "port": "458293d6-52c0-4324-94c0-984548e6d285"
+            },
+            "target": {
+              "cell": "645c3c79-8059-47a6-97cc-b0bd04b9f6a7",
+              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
+            },
+            "vertices": [
+              {
+                "x": 780,
+                "y": 190
+              },
+              {
+                "x": 670,
+                "y": 190
+              },
+              {
+                "x": 620,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Solicitud de materias",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "80003fad-5ba8-4805-aa26-77745dfcff32",
+                  "title": "Manipulación de solicitud de matrícula",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Un atacante podría modificar parámetros de matrícula para registrar materias no autorizadas.",
+                  "mitigation": "Validar solicitudes en backend y aplicar controles de autorización.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Solicitud de materias"
+            ],
+            "id": "a548f91f-98d4-4f79-8d5d-e60b0845187d",
+            "source": {
+              "cell": "f06472c0-09af-4b94-a8d5-6884fc1f3780",
+              "port": "488f8e6b-ac40-42c0-9ee0-cdd8337e9414"
+            },
+            "target": {
+              "cell": "e850844f-15f0-4160-af9a-8d112e9a1d94",
+              "port": "93063391-49bb-4c39-a2dd-57f523b70596"
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 230
+              },
+              {
+                "x": 390,
+                "y": 230
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Confirmación/Error",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "806e7132-e27c-44bc-a619-ee874fe76ace",
+                  "title": "Divulgación de información interna",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Mensajes detallados de error podrían revelar información interna del sistema.",
+                  "mitigation": "Mostrar mensajes genéricos y registrar detalles solo en logs internos.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Confirmación/Error"
+            ],
+            "id": "0f9de90f-b7a1-4feb-9f86-9ac6ee00d9f7",
+            "source": {
+              "cell": "e850844f-15f0-4160-af9a-8d112e9a1d94",
+              "port": "93063391-49bb-4c39-a2dd-57f523b70596"
+            },
+            "target": {
+              "cell": "f06472c0-09af-4b94-a8d5-6884fc1f3780",
+              "port": "488f8e6b-ac40-42c0-9ee0-cdd8337e9414"
+            },
+            "vertices": [
+              {
+                "x": 370,
+                "y": 310
+              },
+              {
+                "x": 280,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1817,13 +1596,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "9cc20a66-a2e0-4272-9eac-7ea2402a4a0a",
+                  "title": "Manipulación de verificación de disponibilidad",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Un atacante podría alterar solicitudes para evadir validaciones de disponibilidad o prerrequisitos.",
+                  "mitigation": "Realizar validaciones del lado servidor y controles de integridad.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Verificar materias y disponibilida"
@@ -1839,8 +1637,8 @@
             },
             "vertices": [
               {
-                "x": 670,
-                "y": 225
+                "x": 720,
+                "y": 245
               }
             ]
           },
@@ -1848,7 +1646,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1869,13 +1668,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "29f351e7-6641-4288-9972-22bbe8a06056",
+                  "title": "Divulgación de información académica",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Datos académicos podrían ser expuestos a usuarios no autorizados.",
+                  "mitigation": "Aplicar controles de acceso y mínimo privilegio.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Datos de materias"
@@ -1891,19 +1709,453 @@
             },
             "vertices": [
               {
-                "x": 800,
-                "y": 225
+                "x": 850,
+                "y": 245
               },
               {
-                "x": 700,
-                "y": 290
+                "x": 750,
+                "y": 310
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Guardar matricula",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "d23f50fa-00da-4ae6-946a-cd3a3eee2cbe",
+                  "title": "Inserción no autorizada de matrículas",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Un atacante podría alterar registros de matrícula o insertar datos fraudulentos.",
+                  "mitigation": "Aplicar validación de integridad, constraints y auditoría de cambios.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Guardar matricula"
+            ],
+            "id": "3290f769-a6b8-4214-8bdd-25eacedaea9d",
+            "source": {
+              "cell": "9f9ae8cb-d768-487c-9376-41fa4ed36508",
+              "port": "34a064ee-14fe-476c-b43a-a606bb831b87"
+            },
+            "target": {
+              "cell": "ad58da16-c4ed-49b6-9637-73d5808c0009",
+              "port": "df37c3fb-1084-44fe-b1c6-2a901cde87cf"
+            },
+            "vertices": [
+              {
+                "x": 1100,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Confirmacion",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "91e2f37e-b7b9-46b3-b4ce-e6508be6e0c1",
+                  "title": "Falsificación de confirmación de matrícula",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Una respuesta falsificada podría generar inconsistencias en el proceso de matrícula.",
+                  "mitigation": "Validar autenticidad de respuestas y usar conexiones seguras.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Confirmacion"
+            ],
+            "id": "3e21949b-d950-4bca-8741-d4b89a0ec72e",
+            "source": {
+              "cell": "ad58da16-c4ed-49b6-9637-73d5808c0009",
+              "port": "df37c3fb-1084-44fe-b1c6-2a901cde87cf"
+            },
+            "target": {
+              "cell": "9f9ae8cb-d768-487c-9376-41fa4ed36508",
+              "port": "34a064ee-14fe-476c-b43a-a606bb831b87"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Solicitud materias a anular",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "8aac67e2-d66b-454b-816a-24df22cea044",
+                  "title": "Manipulación de anulación de materias",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Un usuario podría intentar anular materias no autorizadas o fuera de periodo.",
+                  "mitigation": "Validar identidad y reglas académicas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Solicitud materias a anular"
+            ],
+            "id": "7fb89af4-08cc-4241-8899-fbf76dec4d83",
+            "source": {
+              "x": 170,
+              "y": 170
+            },
+            "target": {
+              "cell": "2dcb74fa-98f2-4556-b88c-e99e0ae88291",
+              "port": "93063391-49bb-4c39-a2dd-57f523b70596"
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 380
+              },
+              {
+                "x": 480,
+                "y": 400
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Verificar matricula",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "1a08a139-b1fe-4fe6-b961-413ff98173d1",
+                  "title": "Acceso indebido a registros académicos",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "La verificación de matrículas podría exponer información académica sensible.",
+                  "mitigation": "Aplicar controles de acceso y consultas parametrizadas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Verificar matricula"
+            ],
+            "id": "73c7e11c-4918-4d1a-a283-44961d5b6e44",
+            "source": {
+              "cell": "2dcb74fa-98f2-4556-b88c-e99e0ae88291",
+              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
+            },
+            "target": {
+              "cell": "ad58da16-c4ed-49b6-9637-73d5808c0009",
+              "port": "458293d6-52c0-4324-94c0-984548e6d285"
+            },
+            "vertices": [
+              {
+                "x": 740,
+                "y": 370
+              },
+              {
+                "x": 970,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Datos de matricula",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "58332e80-90f6-4d56-8ad9-69623ceeaf85",
+                  "title": "Manipulación de datos de matrícula",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Datos alterados podrían permitir anulaciones inválidas o inconsistencias académicas.",
+                  "mitigation": "Usar controles de integridad y validación transaccional.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Datos de matricula"
+            ],
+            "id": "8d76ee33-9498-44c6-a61b-756cde40390f",
+            "source": {
+              "cell": "ad58da16-c4ed-49b6-9637-73d5808c0009",
+              "port": "458293d6-52c0-4324-94c0-984548e6d285"
+            },
+            "target": {
+              "cell": "2dcb74fa-98f2-4556-b88c-e99e0ae88291",
+              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
+            },
+            "vertices": [
+              {
+                "x": 870,
+                "y": 500
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Configuracion de periodos y fechas",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "7c1640fa-fe20-4afd-8767-7359d7720003",
+                  "title": "Manipulación de configuración académica",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "La modificación indebida de periodos académicos puede afectar el funcionamiento institucional.",
+                  "mitigation": "Aplicar RBAC, MFA y auditoría administrativa.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Configuracion de periodos y fechas"
+            ],
+            "id": "5041c4e6-413f-42fd-9cb9-3767a030891a",
+            "source": {
+              "cell": "62973589-d03b-4aa0-924a-b7a413469462",
+              "port": "6aa81627-5e35-4b9d-94fd-eeda23f6888f"
+            },
+            "target": {
+              "cell": "6e1d5722-a830-4f43-9f37-64efc32b1353",
+              "port": "93063391-49bb-4c39-a2dd-57f523b70596"
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 580
               }
             ]
           },
           {
             "position": {
-              "x": 990,
-              "y": 620
+              "x": 1040,
+              "y": 640
             },
             "size": {
               "width": 120,
@@ -2145,7 +2397,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2166,21 +2419,40 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "87eee9f4-45db-4f3b-86aa-95c49f16b059",
+                  "title": "Exposición de información del sistema",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Mensajes detallados podrían revelar estructura interna o lógica del sistema.",
+                  "mitigation": "Utilizar mensajes controlados y sanitizados.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Confirmacion/Error"
             ],
             "id": "de707de7-d66f-4a05-9b9c-b46d12b9433e",
             "source": {
-              "x": 510,
-              "y": 400
+              "x": 560,
+              "y": 420
             },
             "target": {
               "cell": "f06472c0-09af-4b94-a8d5-6884fc1f3780",
@@ -2188,8 +2460,84 @@
             },
             "vertices": [
               {
-                "x": 180,
-                "y": 490
+                "x": 230,
+                "y": 510
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 14,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Guardar/Actualizar periodos",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "a9bdb559-284d-4ea8-8fc4-0379f862eabd",
+                  "title": "Alteración de periodos académicos",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Cambios no autorizados podrían afectar fechas y disponibilidad del sistema.",
+                  "mitigation": "Implementar control de acceso y validación de cambios.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Guardar/Actualizar periodos"
+            ],
+            "id": "117783bb-eb3a-4fdb-a47a-6826e491e331",
+            "source": {
+              "cell": "6e1d5722-a830-4f43-9f37-64efc32b1353",
+              "port": "189c4a32-2a4e-4970-badb-fe2d3e419f51"
+            },
+            "target": {
+              "cell": "e3ef21c8-ffaa-41c9-a822-5ae9b9b67c98",
+              "port": "458293d6-52c0-4324-94c0-984548e6d285"
+            },
+            "vertices": [
+              {
+                "x": 740,
+                "y": 680
+              },
+              {
+                "x": 850,
+                "y": 630
               }
             ]
           }
@@ -2199,6 +2547,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Alejandro, Gianfranco, Jefferson, Jeremy",
-    "threatTop": 1
+    "threatTop": 21
   }
 }
